@@ -33,6 +33,12 @@ Dommage que tu ne sois pas allé plus loin dans le projet, qu'est-ce qui t'a blo
 
 N'hésite pas à m'expliquer la raison en MP ou si tu préfères en discuter de vive voix, je suis disponible sur Discord. 😁
 
-Dans tous les cas, le code que tu as rendu est correct. Tu devrais essayer de le terminer en utilisant le moins possible la correction et t'inscrire dans un groupe d'ECP pour comparer ton code avec celui des autres apprenants 😁
+<hr>
+
+## En **résumé**... 😁
+
+## Dans tous les cas, le code que tu as rendu est correct. 👏
+
+Tu devrais l'améliorer avec les points que j'ai relevé et essayer de le terminer en utilisant le moins possible la correction et t'inscrire dans un groupe d'ECP pour comparer ton code avec celui des autres apprenants 😁
 
 Bonne continuation ! 👋
