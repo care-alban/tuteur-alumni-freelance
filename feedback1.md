@@ -21,7 +21,7 @@ Le souci est que si tu as besoin de modifier une méthode, tu dois la chercher d
 >
 > - du coup dans le model correspondant, on les retrouve dans le même ordre : findAll, find, insert, update, delete.
 
-Dans le même ordre d'idée, tu as tendance à utiliser des noms de méthodes qui sont très long comme dans ton fichier teacherController où tu as une méthode `teacherUpdatePost` ou pas suffisamment parlant comme `teacher`. Pour ce dernier qui est utilisée pour lister tous les profs. Il serait plus judicieux de l'appeler `teacherList` ou mieux puisqu'on est dans un controller qui gère les profs, pourquoi ne pas l'appeler juste : `list`. 😏
+Dans le même ordre d'idée, tu as tendance à utiliser des noms de méthodes qui sont très long comme dans ton fichier teacherController où tu as une méthode `teacherUpdatePost` ou pas suffisamment parlant comme `teacher`. Pour ce dernier qui est utilisée pour lister tous les profs. Il serait plus judicieux de l'appeler `teachers` ou mieux puisqu'on est dans un controller qui gère les profs, pourquoi ne pas l'appeler juste : `teacherList`. 😏 (⛔ attention à l'utilisation d'une methode `list()`, il existe déjà une funtion `list()` en PHP qui "assigne des variables comme si elles étaient un tableau")
 
 Cette remarque fonctionne également pour tes paramètres de méthodes ! Dans ta méthode `teacherUpdatePost`, tu attends un paramètre que tu nommes `$teacherid`. Pourquoi ne pas l'appeler `$id` tout simplement ? 😁 (Au passage, n'oublie pas les conventions de nommage, si tu dois utiliser plusieurs éléments dans un nom il convient d'uiliser le cas présent le **camelCase** ce qui donnerait `$teacherId`)
 
@@ -83,7 +83,7 @@ Tu n'as pas utilisé de requêtes préparées dans tous tes models, c'est dommag
 
 J'imagine que tu n'as pas eu le temps de t'attaquer à la protection CSRF (Cross-Site Request Forgery) ? 😁
 
-Pas de panique, il est déjà très impressionnant d'être arrivé jusque là 👏 ! Et il est toujours temps de le faire avec la correction ! 💪
+Pas de pression 🍺, il est déjà très impressionnant d'être arrivé jusque là 👏 ! Et il est toujours temps de le faire avec la correction ! 💪
 
 <hr>
 
