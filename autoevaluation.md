@@ -31,7 +31,8 @@ Pour être le plus exhaustif possible, je me suis établi une liste de critères
 >
 > - MVC (respect de l'architecture et de la séparation des responsabilités)
 > - Gestion des routes
-> - Affichage d'une liste et ajout d'un élément
+> - Affichage des listes (profs et/ou étudiants)
+> - Ajout d'un prof et/ou d'un étudiant
 > - Mise en place de l'authentification (utilisation de sessions)
 >
 > Notions transversales :
@@ -42,8 +43,7 @@ Pour être le plus exhaustif possible, je me suis établi une liste de critères
 >
 > Notions supplémentaires :
 >
-> - Héritage (utilisation de classes abstraites)
-> - CRUD (utilisation des 4 méthodes)
+> - Héritage (utilisation de abstraction)
 > - Protection CSRF
 
 J'ai essayé de transmettre une vision globale de la correction en mettant en avant les difficultés récurrentes rencontrées par plusieurs apprenants et j'ai fait un retour individuel pour chaque apprenant en essayant d'être de plus précis et le plus objectif possible.
