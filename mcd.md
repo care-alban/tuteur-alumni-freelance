@@ -2,7 +2,7 @@ On voit dans le travail que tu m'as rendu que tu as bien compris le concept gén
 
 C'est une très bien d'avoir pensé à ajouter la contextualisation de ton projet, cela permet de mieux suivre ton schéma et de comprendre ta réflexion 👍
 
-> 🎁 Tips : Tu pourrais l'écrire sous forme de tableau, ou de liste et y ajouter de la mise en forme (mettre en italique les entités, en majuscule les verbes et en gras les cardinalités par exemple) pour en **faciliter la lecture**, mais ce n'est pas obligatoire.
+> 🎁 Tips : tu pourrais l'écrire sous forme de tableau, ou de liste et y ajouter de la mise en forme (mettre en italique les entités, en majuscule les verbes et en gras les cardinalités par exemple) pour en **faciliter la lecture**, mais ce n'est pas obligatoire.
 >
 > Par exemple : Un _utilisateur_ peut PASSER **aucune ou plusieurs** _commandes_.
 >
@@ -14,7 +14,7 @@ C'est une très bien d'avoir pensé à ajouter la contextualisation de ton proje
 
 J'ai remarqué que tu as ressenti le besoin d'y faire figurer la fonctionnalité correspondante, c'est une bonne idée, mais tu peux le faire dans une partie à part, pour ne pas surcharger ta contextualisation ou :
 
-> 🎁 Tips : ...en introduction.
+> 🎁 Tips : ...En introduction.
 >
 > Par exemple :
 >
@@ -28,9 +28,9 @@ J'ai remarqué que tu as ressenti le besoin d'y faire figurer la fonctionnalité
 <hr>
 
 Tu as su trouver les bonnes entités et les bonnes relations, c'est très bien 👍 !
-Comme tu l'as appris en formation, on définit une relation en utilisant un VERBE, le top serait d'utiliser un VERBE D'ACTION et de ne pas le conjuguer (ça laisse la possibilité de lire la relation dans les deux sens 😉). Par exemple, on ne dira pas "Un utilisateur peut avoir un adresse", mais "Un utilisateur peut AJOUTER une adresse".
+Comme tu l'as appris en formation, on définit une relation en utilisant un VERBE, le top serait d'utiliser un VERBE D'ACTION et de ne pas le conjuguer (ça laisse la possibilité de lire la relation dans les deux sens 😉). Par exemple, on ne dira pas "Un utilisateur peut avoir une adresse", mais "Un utilisateur peut AJOUTER une adresse".
 
-> 🎁 Tips : Si tu manques d'inspiration, tu peux utiliser ton moteur de recherche préféré, en tapant "verbe d'action" ou "liste de verbes d'action" et tu trouveras des listes de verbes d'action qui pourront t'aider à trouver les bons verbes pour tes relations. Voilà un exemple que j'utilise personnellement : [liste de verbes d'actions](https://www.acsoe.com/liste-verbes-action/)
+> 🎁 Tips : si tu manques d'inspiration, tu peux utiliser ton moteur de recherche préféré, en tapant "verbe d'action" ou "liste de verbes d'action" et tu trouveras des listes de verbes d'action qui pourront t'aider à trouver les bons verbes pour tes relations. Voilà un exemple que j'utilise personnellement : [liste de verbes d'actions](https://www.acsoe.com/liste-verbes-action/)
 
 <hr>
 
@@ -42,19 +42,19 @@ Mais ne t'inquiète pas, l'ID n'a pas disparu, il reviendra plus tard quand les 
 
 > 🎁 Tips : Si ton entité à besoin d'une propriété pour avoir des enregistrements "uniques", tu peux par exemple utiliser la nomenclature `CODE_PRODUCT`.
 
-> 🎁 Plus de tips 😱 ? ok...
+> 🎁 Plus de tips 😱 ? Ok...
 >
 > Tu pourrais indiquer dans ton schéma la propriété qui a cette particularité (**le déterminant**) en la soulignant pour la distinguer plus rapidement. Par exemple dans le cas d'un utilisateur, on pourrait ne pas mettre de propriété supplémentaire et souligner son email 😉
 
 <hr>
 
-Tant qu'à discuter des propriétés des entités, elles sont très intimement liées au projet que tu développes, mais doivent être les plus exhaustives (complètes) possibles. C'est pourquoi il faut se poser le maximum de question et imaginer tous les scénarios possibles.
+Puisqu'on discute des propriétés des entités, même si elles sont très intimement liées au projet que tu développes, elles doivent être les plus exhaustives (complètes) possibles. C'est pourquoi il faut te poser le maximum de question et imaginer tous les scénarios possibles.
 
 Par exemple :
 
 Quelles sont les informations présentent dans une adresse de livraison ? (nom et prénom, rue, etc...)
 
-💡 A ce sujet, il y a quelques fautes d'orthographe dans ton entité adresse, n'hésites pas à bien relire et utiliser un traducteur en ligne si besoin.
+💡 A ce sujet, il y a quelques fautes d'orthographe dans ton entité adresse, n'hésites pas à bien relire et à utiliser un traducteur en ligne si besoin.
 
 D'autres exemples :
 
@@ -62,12 +62,12 @@ D'autres exemples :
 - Du coup comment faire le lien entre l'adresse de livraison et la commande ?
 - ...
 
-> 🎁 Tips : Je te conseille de faire une liste de toutes les propriétés que tu imagines pour chaque entité au brouillon au fur et à mesure de tes interrogations, et de t'inspirer d'exemple de la vie courante (autres sites d'ecommerce).
+> 🎁 Tips : je te conseille de faire une liste de toutes les propriétés que tu imagines pour chaque entité au brouillon au fur et à mesure de tes interrogations, et de t'inspirer d'exemple de la vie courante (autres sites d'Ecommerce).
 
 <hr>
 
 Tu as bien indiqué des cardinalités pour chaque relation, c'est très bien 👍 !
-Si tu suivis les conseils précédents (écrire les relations dans les deux sens sous forme de liste, imaginer/lister tous les cas de figures,...), tu remarqueras que certaines relations n'ont pas la bonne cardinalité 🤔. Tu veux un indice ? On peut traduire "Many To Many" par "plusieurs à plusieurs"😉
+Si tu suivis les conseils précédents (écrire les relations dans les deux sens sous forme de liste, imaginer/lister tous les cas de figure,...), tu remarqueras que certaines relations n'ont pas la bonne cardinalité 🤔. Tu veux un indice ? On peut traduire "Many To Many" par "plusieurs à plusieurs"😉
 
 <hr>
 
@@ -78,7 +78,7 @@ Je te laisse améliorer ton travail et je reste disponible si tu as besoin de pl
 
 Tu peux aussi, avant de te lancer, relire la fiche Kourou pour t'aider : [MCD / Modèle Conceptuel de Données](https://kourou.oclock.io/ressources/fiche-recap/mcd-modele-conceptuel-de-donnees/)
 
-> 🎁 Tu reprendras bien un dernier Tips : Tout refaire à la main est un bon exercice, mais il vaut mieux s'habituer à utiliser des outils spécialisés pour être paré à affronter des gros projets, alors tu peux aussi utiliser un outil en ligne pour t'aider 😅. Voici quelques exemples :
+> 🎁 Tu reprendras bien un dernier tips : tout refaire à la main est un bon exercice, mais il vaut mieux s'habituer à utiliser des outils spécialisés pour être paré à affronter des gros projets, alors tu peux aussi utiliser un outil en ligne pour t'aider 😅. Voici quelques exemples :
 >
 > - [draw.io](https://www.draw.io/)
 > - [Mocodo](https://mocodo.net/)
@@ -86,4 +86,4 @@ Tu peux aussi, avant de te lancer, relire la fiche Kourou pour t'aider : [MCD / 
 > - [Lucidchart](https://www.lucidchart.com/pages/fr)
 > - [Visual Paradigm](https://www.visual-paradigm.com/)
 
-Bon courage pour la suite, tu vas y arriver 💪 !
+Bon courage pour la suite 💪 !
