@@ -1,6 +1,6 @@
 Tu as bien compris l'architecture MVC et tu respectes la séparation des responsabilités, bravo ! 👏
 
-Tu as pensé à ajouter un fichier .htaccess pour la réécriture d'url, c'est très bien ! Mais pourquoi ne pas en avoir profité pour en ajouter un également dans ton dossier app, pour empêcher l'accès direct à tes fichiers php ? 😁
+Tu as pensé à ajouter un fichier .htaccess pour la réécriture d'URL, c'est très bien ! Mais pourquoi ne pas en avoir profité pour en ajouter un également dans ton dossier app, pour empêcher l'accès direct à tes fichiers php ? 😁
 
 ```apacheconf
 // app/.htaccess
@@ -27,7 +27,7 @@ La manière d'écrire du code est propre à chaque développeur, on a tous nos p
 🎁 Pour en savoir plus sur les commentaires, je t'invite à lire cet article : https://itexpert.fr/blog/commentaires-parfaits/
 
 💡 Dans le même ordre d'idée, il est important de respecter les conventions de nommage pour que le code reste homogène même si plusieurs développeurs travaillent dessus. 😁
-Par exemple, tu as nommé tes controllers au pluriel (StudentsController.php) et tes models (Students.php). La convention de nommage courante (mais pas obligatoire certe) pour les controllers et les modèles est de les nommer au singulier (StudentController.php et Student.php) et d'utiliser pour les controllers le UpperCamelCase et pour les modèles le CamelCase.
+Par exemple, tu as nommé tes controllers au pluriel (StudentsController.php) et tes modèles (Students.php). La convention de nommage courante (mais pas obligatoire certe) pour les controllers et les modèles est de les nommer au singulier (StudentController.php et Student.php) et d'utiliser pour les controllers le UpperCamelCase et pour les modèles le CamelCase.
 
 🎁 Tu pourras retrouver tout ça ici > [Conventions generales nommage](https://www.alsacreations.com/outils/guidelines/Conventions-generales-nommage.md)
 
