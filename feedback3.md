@@ -24,7 +24,7 @@ Mais du coup, je me suis demandé si tu avais bien vu la consigne "la liste des 
 
 ### ... je commente ✍
 
-J'ai vu que tu avais commentaire dans ton code, c'est une bonne pratique 👍 ! Mais tout ne doit pas être commenté, et les commentaires ne servent pas à expliquer ce que fait ton code, mais pourquoi tu l'as fait.
+J'ai vu que tu avais utiliser des commentaires dans ton code, c'est une bonne pratique 👍 ! Mais tout ne doit pas être commenté, et les commentaires ne servent pas à expliquer ce que fait ton code, mais pourquoi il le fait.
 
 Les commentaires comme : "Le formulaire a été soumis, les données sont envoyées", sont des commentaires qui ont un but pédagogique, ils servent à laisser une trace des explications faites en cockpit. Ils ne doivent pas être présents dans le code final d'un projet.
 
@@ -44,7 +44,7 @@ public function err404()
 
 🎁 Pour en savoir plus sur les commentaires, je t'invite à lire cet article : https://itexpert.fr/blog/commentaires-parfaits/
 
-### Et je fais du ménage ? 🧹
+### Et je fais le ménage ! 🧹
 
 💡 Attention, tu as tendance à laisser des lignes vides dans ton code ou à ne pas respecter les indentations, il faut t'habituer à ce que ton code soit le plus lisible possible, et les lignes vides ne servent pas à grand chose 😂.
 
@@ -56,27 +56,27 @@ N'oublie pas que pour pouvoir réutiliser la barre de navigation et les scripts 
 
 ## MainController, vous avez dit MainController ? 🤔
 
-La méthode show() est une méthode commune à plusieurs controllers (elle est utilisé dans ton mainController, teacherController et studentController, errorController).
+La méthode show() est une méthode commune à plusieurs controllers (elle est utilisé dans ton MainController, TeacherController et StudentController, ErrorController).
 
-💡 Ne serait-il pas mieux de la déplacer dans un fichier plus global comme le CoreController, et de faire hériter tes controllers de ce fichier plutôt que du mainController (qui contient ta méthode home()) ?
+💡 Ne serait-il pas mieux de la déplacer dans un fichier plus global comme le CoreController, et de faire hériter tes controllers de ce fichier plutôt que du MainController (qui contient ta méthode home()) ?
 
-C'est toujours intéresant de séparer les différentes responsabilités des composants de l'application et de les organiser de manière claire et cohérente.
+C'est toujours intéressant de séparer les différentes responsabilités des composants de l'application et de les organiser de manière claire et cohérente.
 
 ## fonctionnalités !
 
-Tu as correctement su mettre en place les fonctionnalites d'affichage de la liste des professeurs et des étudiants et tu as même pensé à utiliser l'abstraction et les fonctions statiques (dans tes modèles), c'est top ! 👍
+Tu as correctement su mettre en place les fonctionnalités d'affichage de la liste des professeurs et des étudiants et tu as même pensé à utiliser l'abstraction et les fonctions statiques (dans tes modèles), c'est top ! 👍
 
 💡 Cependant pourquoi ne pas avoir inclus l'id dans ton fichier coreModel, c'est une propriété commune à tous tes modèles ?
 
 💡 Attention au choix du nom de tes méthodes, `public function getCreated_at()` (dans ton coreModel) n'est pas conforme à la convention de nommage des méthodes en PHP. Il faut utiliser le camelCase : `public function getCreatedAt()`.
 
-🎁 Tu pourras retrouver tout ça ici > [Conventions generales nommage](https://www.alsacreations.com/outils/guidelines/Conventions-generales-nommage.md)
+🎁 Tu pourras retrouver tout ça ici > [Conventions générales nommage](https://www.alsacreations.com/outils/guidelines/Conventions-generales-nommage.md)
 
 ## Copier/coller... ou ne pas être ! 🤔
 
 C'est super que tu aies réussi à mettre en place la fonctionnalité d'ajout d'un étudiant, mais je me suis rendu compte que tu avais copié/collé ton code pour l'ajout d'un professeur, et que tu l'avais modifié pour l'adapter.
 
-Et comme je suis un peu curieux (et téméraire), j'ai voulu tester ton formulaire d'ajout d'un professeur, et là... surprise 😱 ! Je suis redirigé vers le formulaire d'ajout d'un étudiant. "student/add" (J'avoue il y a pire comme prise de risque ! 😂)
+Et comme je suis un peu curieux (et téméraire), j'ai voulu tester ton formulaire d'ajout d'un professeur, et là... Surprise 😱 ! Je suis redirigé vers le formulaire d'ajout d'un étudiant. "student/add" (J'avoue qu'il y a pire comme prise de risque ! 😂)
 
 💡 Attention, c'est une mauvaise habitude de faire des copier/coller, car tu risques d'oublier de modifier certaines parties du code, et de te retrouver avec des bugs.
 
@@ -84,7 +84,7 @@ Et comme je suis un peu curieux (et téméraire), j'ai voulu tester ton formulai
 
 ## je contrôle, donc je suis... (sûr que ça fonctionne !) 🥳!
 
-Tant qu'à être sur le formulaire d'ajout d'un étudiant, j'ai voulu le tester, et là... impossible de choisir un professeur dans la liste déroulante. 😱
+Tant qu'à être sur le formulaire d'ajout d'un étudiant, j'ai voulu le tester, et là... Impossible de choisir un professeur dans la liste déroulante. 😱
 
 ```html
 <select name="teacher" id="teacher" class="form-control">
@@ -97,7 +97,7 @@ Tant qu'à être sur le formulaire d'ajout d'un étudiant, j'ai voulu le tester,
 
 Est-ce que tu n'aurais pas oublié ou rencontré des difficultés pour récupérer et transmettre la liste des professeurs à ton formulaire ?
 
-🎁 Si c'est le cas, dis-toi que c'est la même logique que générer la liste des professeurs, et que les données tramsmises ne te serviront que dans les options de ta balise select.
+🎁 Si c'est le cas, dis-toi que c'est la même logique que générer la liste des professeurs, et que les données transmises ne te serviront que dans les options de ta balise select.
 
 ## NOT NULL is not null ! 🤔
 
@@ -112,7 +112,7 @@ $sql = "
 
 J'imagine que si tu as rencontré des difficultés avec la liste déroulante, tu as peut-être voulu faire la requête SQL sans l'id de l'enseignant, pour pouvoir tester ton formulaire.
 
-💡 Mais dans le cas présent, ce n'est pas possible de l'omettre car il est défini comme NOT NULL dans ta base de données :
+💡 Mais dans le cas présent, ce n'est pas possible de l'omettre, car il est défini comme NOT NULL dans ta base de données :
 
 ```sql
 `teacher_id` INT UNSIGNED NOT NULL
@@ -120,7 +120,7 @@ J'imagine que si tu as rencontré des difficultés avec la liste déroulante, tu
 
 C'est un sécurité qui permet de s'assurer que chaque étudiant ait un enseignant "référent".
 
-💡 Je pense que tu devrais reprendre cette partie là calmement (en essayant de la faire sans la correction), récupérer la liste des enseignants et mettre à jour ton formulaire, puis modifier ta requête SQL pour qu'elle soit cohérente avec les données que l'on souhaites insérer.
+💡 Je pense que tu devrais reprendre cette partie calmement (en essayant de la faire sans la correction), récupérer la liste des enseignants et mettre à jour ton formulaire, puis modifier ta requête SQL pour qu'elle soit cohérente avec les données que l'on souhaites insérer.
 
 ## Et si on sécurisait un peu tout ça ? 🔒
 
@@ -130,13 +130,13 @@ Et si on poussait un peu plus loin la sécurité ?
 
 💡 Quand ta fonctionnalité d'ajout d'un étudiant sera terminé, et que ta requête fonctionnera correctement, pourquoi ne pas l'améliorer en utilisant des requêtes préparées ?
 
-🎁 Tu pourras retrouver tout ça ici sur la documentation officielle de php : [Requêtes préparées](https://www.php.net/manual/fr/pdo.prepared-statements.php) et biensûr sur kourou : [Requêtes préparées](https://kourou.oclock.io/ressources/fiche-recap/pdo/#requ%c3%aates-pr%c3%a9par%c3%a9es)
+🎁 Tu pourras retrouver tout ça ici sur la documentation officielle de php : [Requêtes préparées](https://www.php.net/manual/fr/pdo.prepared-statements.php) et bien sûr sur kourou : [Requêtes préparées](https://kourou.oclock.io/ressources/fiche-recap/pdo/#requ%c3%aates-pr%c3%a9par%c3%a9es)
 
 <hr>
 
 ## En **résumé**... 😁
 
-Tu devrais pouvoir améliorer ton code existant avec les points que je t'ai indiqué. Mais ce n'est pas suffisant il faut aussi que tu essayes de le terminer en utilisant le moins possible la correction.
+Tu devrais pouvoir améliorer ton code existant avec les points que je t'ai indiqué. Mais ce n'est pas suffisant, il faut aussi que tu essayes de le terminer en utilisant le moins possible la correction.
 J'invite à t'inscrire dans un groupe d'ECP pour pouvoir discuter et comparer ton code avec celui des autres apprenants 😁
 
 Bonne continuation ! 👋
