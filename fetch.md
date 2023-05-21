@@ -1,7 +1,7 @@
 ## **Spoiler Alert !**
 
 _La notion de fetch sera abordée dans la prochaine saison pour récupérer une ressource en JS alors fais preuve de patience..._
-_- ...non ? Tu tiens vraiment en savoir plus maintenant, c'est sûr ? Très bien, c'est parti pour un petit teasing ! 😎_
+_- ...Non ? Tu tiens vraiment en savoir plus maintenant, c'est sûr ? Très bien, c'est parti pour un petit teasing ! 😎_
 
 ## Fetch, c'est quoi ?
 
@@ -21,7 +21,7 @@ Avant de t'expliquer comment fonctionne cette méthode, il faut d'abord que je t
 
 <hr>
 
-Quand un programme est **synchrone**, il lit et execute les instructions les unes après les autres, dans l'ordre où elles sont écrites, un peu comme si tu lisais un livre (ou cette explication, du moins je l'espère 😅).
+Quand un programme est **synchrone**, il lit et exécute les instructions les unes après les autres, dans l'ordre où elles sont écrites, un peu comme si tu lisais un livre (ou cette explication, du moins je l'espère 😅).
 Certaines parties du code peuvent être plus longues à s'exécuter que d'autres, voir bloquantes (😱 pas de panique, je t'explique ce que c'est juste après !), et le programme ne passera pas à l'instruction suivante tant que la précédente n'est pas terminée. Et des fois ça peut être long, très long... 😴
 
 par exemple :
@@ -46,11 +46,11 @@ console.log("Je suis la dernière instruction !");
 
 De la même manière, le fait de demander et de récupérer des ressources sur un serveur peut être une tâche longue (quantité de données à récupérer, puissance du serveur, distance entre les machines, ...). Et si tu as plusieurs requêtes à faire, ça peut vite poser un problème ou pire faire fuir ton utilisateur...
 
-Heureusement il existe une solution : l'**asynchrone** !
+Heureusement, il existe une solution : l'**asynchrone** !
 
 Tu l'as compris, à l'inverse du programme synchrone, l'asyncrone ne va pas attendre la fin d'une instruction pour passer à la suivante. Il va lancer l'instruction asynchrone, passer à l'instruction suivante, et revenir à la première instruction quand elle sera terminée.
 
-par exemple :
+Par exemple :
 
 ```js
 /**
@@ -70,7 +70,7 @@ console.log("Je suis la dernière instruction !");
 // "Je suis la dernière instruction !" s'affiche tout de suite, puis "Fini d'attrendre !" s'affiche après 5 secondes
 ```
 
-**- Bon ok du coup "Je suis la dernière instruction !" s'affiche en premier... mais c'est pas grave, tu as compris le principe !**
+**- bon ok du coup "Je suis la dernière instruction !" s'affiche en premier... Mais ce n'est pas grave, tu as compris le principe !**
 
 **- C'est tout ?**
 
@@ -80,9 +80,9 @@ console.log("Je suis la dernière instruction !");
 
 <hr>
 
-Une [promesse](https://developer.mozilla.org/fr/docs/Web/JavaScript/Guide/Using_promises) est ce qui va representer la fin d'une tâche asynchrone. Tu te souviens dans l'explication "Il va lancer l'instruction asynchrone, passer à l'instruction suivante, et revenir à la première instruction quand elle sera terminée." ? Et bien la promesse va permettre de savoir quand la tâche asynchrone est terminée, et de récupérer le résultat de cette tâche. 😎
+Une [promesse](https://developer.mozilla.org/fr/docs/Web/JavaScript/Guide/Using_promises) est ce qui va représenter la fin d'une tâche asynchrone. Tu te souviens dans l'explication "Il va lancer l'instruction asynchrone, passer à l'instruction suivante, et revenir à la première instruction quand elle sera terminée." ? Et bien la promesse va permettre de savoir quand la tâche asynchrone est terminée, et de récupérer le résultat de cette tâche. 😎
 
-Pour utiliser une promesse, il faut utiliser la méthode `.then()` qui va prendre en paramètre une fonction qui sera executée quand la promesse sera terminée (Allez juste pour la beauté du mot, c'est ce qu'on appelle une fonction **[callBack](https://developer.mozilla.org/fr/docs/Glossary/Callback_function)** ).
+Pour utiliser une promesse, il faut utiliser la méthode `.then()` qui va prendre en paramètre une fonction qui sera exécutée quand la promesse sera terminée (Allez juste pour la beauté du mot, c'est ce qu'on appelle une fonction **[callBack](https://developer.mozilla.org/fr/docs/Glossary/Callback_function)** ).
 
 par exemple :
 
@@ -105,7 +105,7 @@ tacheNonBloquante().then(() => {
 // "Je suis la dernière instruction !" s'affiche après 5 secondes, puis "Fini d'attrendre !" s'affiche dans la foulée
 ```
 
-**- Ok, mais c'est pas encore ça...**
+**- Ok, mais ce n'est pas encore ça...**
 
 **- Oui, je sais, je sais...**
 
@@ -115,9 +115,9 @@ tacheNonBloquante().then(() => {
 
 <hr>
 
-Maintenant qu'on a parlé des principe de l'asynchrone et des promesses , je peux enfin t'expliquer le fonctionnement de la méthode `fetch` ! 🙌
+Maintenant que l'on a parlé des principes de l'asynchrone et des promesses, je peux enfin t'expliquer le fonctionnement de la méthode `fetch` ! 🙌
 
-Comme je te l'ai écrit plus haut mais avec maintenant les connaissances que tu as acquises, on peut écrire que : `fetch` est une méthode qui va te permettre de faire une requête HTTP (ou HTTPS !) vers un serveur pour récupérer des données. Elle va retourner une réponse (sous la forme d'une promesse) qui sera résolue quand la requête sera terminée. Tu pourras ensuite utiliser la méthode `.then()` pour traiter le résultat de la requête !
+Comme je te l'ai écrit plus haut, mais avec maintenant les connaissances que tu as acquises, on peut écrire que : `fetch` est une méthode qui va te permettre de faire une requête HTTP (ou HTTPS !) vers un serveur pour récupérer des données. Elle va retourner une réponse (sous la forme d'une promesse) qui sera résolue quand la requête sera terminée. Tu pourras ensuite utiliser la méthode `.then()` pour traiter le résultat de la requête !
 
 Un exemple ?
 
@@ -142,7 +142,7 @@ fetch("http://localhost:8080/api/teachers")
 
 <hr>
 
-Tu te souviens de la fonction `tacheNonBloquante` ? Et bien c'est exactement ce que fait `fetch` ! Elle va lancer une tâche asynchrone (la requête HTTP), et retourner une promesse qui sera résolue quand la requête sera terminée. Et comme on l'a vu, on peut utiliser la méthode `.then()` pour traiter le résultat de la requête !
+Tu te souviens de la fonction `tacheNonBloquante` ? Et bien, c'est exactement ce que fait `fetch` ! Elle va lancer une tâche asynchrone (la requête HTTP), et retourner une promesse qui sera résolue quand la requête sera terminée. Et comme on l'a vu, on peut utiliser la méthode `.then()` pour traiter le résultat de la requête !
 
 **- Ok, mais pourquoi on a écrit `.then((response) => response.json())` ?**
 
@@ -204,7 +204,7 @@ Ah oui ! J'ai oublié de te préciser que la méthode `fetch` renvoie un objet `
 - https://developer.mozilla.org/en-US/docs/Web/API/Response/json
 - https://developer.mozilla.org/fr/docs/Glossary/Callback_function
 
-Et bien sûr, la documentation kourou dans la prochaine saison, à bientôt ! 😎
+Et bien sûr, la documentation kourou disponible dans la prochaine saison, à bientôt ! 😎
 
 ```
 Q: "how do javascript developers break up ?"
